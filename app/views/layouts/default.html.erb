@@ -31,8 +31,10 @@
       } else if (response.status === 'not_authorized') {
         // the user is logged in to Facebook,
         //but not connected to the app
+        alert("not connected to app");
       } else {
         // the user isn't even logged in to Facebook.
+        alert("not logged in to facebook");
       }
     });
   };
