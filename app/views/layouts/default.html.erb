@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playsay</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '181490331947977', // App ID
+      channelUrl : '//playsay-esp.heroku.com/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        // the user is logged in and connected to your
+        // app, and response.authResponse supplies
+        // the user's ID, a valid access token, a signed
+        // request, and the time the access token
+        // and signed request each expire
+        var uid = response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+        alert("connected to app");
+      } else if (response.status === 'not_authorized') {
+        // the user is logged in to Facebook,
+        //but not connected to the app
+      } else {
+        // the user isn't even logged in to Facebook.
+      }
+    });
+  };
+
+  // Load the SDK Asynchronously
+  (function(d) {
+    var js, id = 'facebook-jssdk';
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement('script');
+    js.id = id;
+    js.async = true;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    d.getElementsByTagName('head')[0].appendChild(js);
+  }(document));
+</script>
+<%= yield %>
+
+</body>
+</html>

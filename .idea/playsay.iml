@@ -47,7 +47,6 @@
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jasmine (v1.0.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rmagick (v2.13.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate-rails3 (v3.0.pre, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.7.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v1.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
