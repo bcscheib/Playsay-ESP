@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/teamvisionvirtual/s3-swf-upload-plugin.git
-  revision: 5d5c9a756122d704f8e44507b2ae62d27bd66f92
-  specs:
-    s3_swf_upload (0.3.0)
-
-GIT
   remote: https://github.com/nov/fb_graph.git
   revision: 6775039adfb1950c7f3553144b9123be2726e5c3
   specs:
@@ -42,8 +36,6 @@ GEM
       activemodel (= 3.0.5)
       activesupport (= 3.0.5)
     activesupport (3.0.5)
-    acts-as-taggable-on (2.1.1)
-      rails
     arel (2.0.10)
     attr_required (0.0.3)
     awesome_print (1.0.1)
@@ -182,7 +174,6 @@ GEM
     rcov (0.9.11)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rmagick (2.13.1)
     rr (1.0.4)
     rspec (2.7.0)
       rspec-core (~> 2.7.0)
@@ -254,7 +245,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  acts-as-taggable-on
   awesome_print
   bundler (~> 1)
   compass
@@ -283,11 +273,9 @@ DEPENDENCIES
   rack-test
   rails (= 3.0.5)
   rcov
-  rmagick
   rr
   rspec-rails
   ruby-debug
-  s3_swf_upload!
   sanitize
   shoulda
   silent-postgres

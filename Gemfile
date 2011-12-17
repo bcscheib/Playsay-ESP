@@ -18,10 +18,7 @@ gem "fb_graph", :git => 'https://github.com/nov/fb_graph.git'
 # export ARCHFLAGS='-arch x86_64'
 # export PATH=/opt/local/lib/postgresql83/bin/:${PATH}
 gem 'pg', '~>0.11.0'
-gem 'rmagick', :require => 'RMagick'
-gem 's3_swf_upload', :git => 'git://github.com/teamvisionvirtual/s3-swf-upload-plugin.git'
 gem 'will_paginate-rails3', '3.0.pre', :require => 'will_paginate'
-gem 'acts-as-taggable-on'
 
 group :development do
   gem 'zencoder-fetcher'
