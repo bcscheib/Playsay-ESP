@@ -1,0 +1,299 @@
+GIT
+  remote: git://github.com/teamvisionvirtual/s3-swf-upload-plugin.git
+  revision: 5d5c9a756122d704f8e44507b2ae62d27bd66f92
+  specs:
+    s3_swf_upload (0.3.0)
+
+GIT
+  remote: https://github.com/nov/fb_graph.git
+  revision: 6775039adfb1950c7f3553144b9123be2726e5c3
+  specs:
+    fb_graph (2.2.4)
+      httpclient (>= 2.2.0.2)
+      rack-oauth2 (>= 0.9.4)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    abstract (1.0.0)
+    actionmailer (3.0.5)
+      actionpack (= 3.0.5)
+      mail (~> 2.2.15)
+    actionpack (3.0.5)
+      activemodel (= 3.0.5)
+      activesupport (= 3.0.5)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.13)
+      rack-test (~> 0.5.7)
+      tzinfo (~> 0.3.23)
+    activemodel (3.0.5)
+      activesupport (= 3.0.5)
+      builder (~> 2.1.2)
+      i18n (~> 0.4)
+    activerecord (3.0.5)
+      activemodel (= 3.0.5)
+      activesupport (= 3.0.5)
+      arel (~> 2.0.2)
+      tzinfo (~> 0.3.23)
+    activeresource (3.0.5)
+      activemodel (= 3.0.5)
+      activesupport (= 3.0.5)
+    activesupport (3.0.5)
+    acts-as-taggable-on (2.1.1)
+      rails
+    arel (2.0.10)
+    attr_required (0.0.3)
+    awesome_print (1.0.1)
+    bcrypt-ruby (3.0.1)
+    builder (2.1.2)
+    cgi_multipart_eof_fix (2.5.0)
+    childprocess (0.2.3)
+      ffi (~> 1.0.6)
+    chunky_png (1.2.5)
+    cmdparse (2.0.3)
+    coderay (0.9.8)
+    columnize (0.3.5)
+    compass (0.11.5)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    configuration (1.3.1)
+    custom_error_message (1.1.0.pre)
+    daemons (1.1.4)
+    deadweight (0.2.1)
+      nokogiri
+    declarative_authorization (0.5.4)
+    devise (1.5.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.1)
+    diff-lcs (1.1.3)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    exceptional (2.0.32)
+      rack
+    fastthread (1.0.7)
+    ffi (1.0.11)
+    fssm (0.2.7)
+    fuubar (0.0.6)
+      rspec (~> 2.0)
+      rspec-instafail (~> 0.1.8)
+      ruby-progressbar (~> 0.0.10)
+    gem_plugin (0.2.3)
+    git (1.2.5)
+    git_remote_branch (0.3.3)
+      rainbow
+    github (0.6.1)
+      highline (~> 1.5.1)
+      json (~> 1.4.6)
+      launchy (~> 0.3.7)
+      text-format (= 1.0.0)
+      text-hyphen (= 1.0.0)
+    haml (3.1.4)
+    hashie (1.2.0)
+    heroku (1.17.17)
+      json (~> 1.4.6)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
+    highline (1.5.2)
+    hpricot (0.8.5)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    httpclient (2.2.4)
+    i18n (0.6.0)
+    jasmine (1.0.2.0)
+      json_pure (>= 1.4.3)
+      rack (>= 1.1)
+      rspec (>= 1.3.1)
+      selenium-webdriver (>= 0.1.3)
+    json (1.4.6)
+    json_pure (1.6.3)
+    juicer (1.0.13)
+      cmdparse
+      nokogiri (>= 1.5.0)
+      rubyzip
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
+    linecache (0.46)
+      rbx-require-relative (> 0.0.4)
+    mail (2.2.19)
+      activesupport (>= 2.3.6)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    map_by_method (0.8.3)
+    method_source (0.6.7)
+      ruby_parser (>= 2.3.1)
+    mime-types (1.17.2)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
+    nokogiri (1.5.0)
+    omniauth (1.0.1)
+      hashie (~> 1.2)
+      rack
+    orm_adapter (0.0.5)
+    pg (0.11.0)
+    pivotal_git_scripts (1.1.0)
+    polyglot (0.3.3)
+    pry (0.9.7.4)
+      coderay (~> 0.9.8)
+      method_source (~> 0.6.7)
+      ruby_parser (>= 2.3.1)
+      slop (~> 2.1.0)
+    rack (1.2.4)
+    rack-mount (0.6.14)
+      rack (>= 1.0.0)
+    rack-oauth2 (0.11.0)
+      activesupport (>= 2.3)
+      attr_required (>= 0.0.3)
+      httpclient (>= 2.2.0.2)
+      i18n
+      json (>= 1.4.3)
+      rack (>= 1.1)
+    rack-test (0.5.7)
+      rack (>= 1.0)
+    rails (3.0.5)
+      actionmailer (= 3.0.5)
+      actionpack (= 3.0.5)
+      activerecord (= 3.0.5)
+      activeresource (= 3.0.5)
+      activesupport (= 3.0.5)
+      bundler (~> 1.0)
+      railties (= 3.0.5)
+    railties (3.0.5)
+      actionpack (= 3.0.5)
+      activesupport (= 3.0.5)
+      rake (>= 0.8.7)
+      thor (~> 0.14.4)
+    rainbow (1.1.3)
+    rake (0.9.2.2)
+    rb-appscript (0.6.1)
+    rbx-require-relative (0.0.5)
+    rcov (0.9.11)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rmagick (2.13.1)
+    rr (1.0.4)
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
+      diff-lcs (~> 1.1.2)
+    rspec-instafail (0.1.9)
+    rspec-mocks (2.7.0)
+    rspec-rails (2.7.0)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.7.0)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
+    ruby-progressbar (0.0.10)
+    ruby_parser (2.3.1)
+      sexp_processor (~> 3.0)
+    rubyzip (0.9.5)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
+    sass (3.1.12)
+    selenium-webdriver (2.15.0)
+      childprocess (>= 0.2.1)
+      ffi (~> 1.0.9)
+      multi_json (~> 1.0.4)
+      rubyzip
+    sexp_processor (3.0.9)
+    shoulda (2.11.3)
+    silent-postgres (0.1.1)
+    slop (2.1.0)
+    terminitor (0.4.1)
+      github (~> 0.6.0)
+      rb-appscript
+      text-format (= 1.0.0)
+      text-hyphen (= 1.0.0)
+      thor (~> 0.14.0)
+    text-format (1.0.0)
+      text-hyphen (~> 1.0.0)
+    text-hyphen (1.0.0)
+    thor (0.14.6)
+    treetop (1.4.10)
+      polyglot
+      polyglot (>= 0.3.1)
+    trollop (1.16.2)
+    tzinfo (0.3.31)
+    warden (1.1.0)
+      rack (>= 1.0)
+    watchr (0.7)
+    webrat (0.7.3)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
+    will_paginate-rails3 (3.0.pre)
+    wirble (0.1.3)
+    zencoder-fetcher (0.2.7)
+      activesupport
+      httparty
+      i18n
+      json
+      trollop
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  acts-as-taggable-on
+  awesome_print
+  bundler (~> 1)
+  compass
+  custom_error_message (= 1.1.0.pre)
+  deadweight
+  declarative_authorization
+  devise
+  exceptional
+  fb_graph!
+  fuubar
+  git
+  git_remote_branch
+  haml
+  heroku (~> 1.17.10)
+  hpricot
+  jasmine (= 1.0.2.0)
+  juicer
+  mail (~> 2.2.15)
+  map_by_method
+  mongrel
+  nokogiri
+  omniauth
+  pg (~> 0.11.0)
+  pivotal_git_scripts
+  pry
+  rack-test
+  rails (= 3.0.5)
+  rcov
+  rmagick
+  rr
+  rspec-rails
+  ruby-debug
+  s3_swf_upload!
+  sanitize
+  shoulda
+  silent-postgres
+  terminitor
+  watchr
+  webrat
+  will_paginate-rails3 (= 3.0.pre)
+  wirble
+  zencoder-fetcher

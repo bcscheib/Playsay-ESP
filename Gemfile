@@ -1,31 +1,60 @@
 source 'http://rubygems.org'
-
+gem 'bundler', '~>1'
 gem 'rails', '3.0.5'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'compass'
+gem 'custom_error_message', '1.1.0.pre'
+gem 'devise'
+gem 'declarative_authorization'
+gem 'exceptional'
+gem 'haml'
+gem 'heroku', '~>1.17.10'
+gem 'mail', '~>2.2.15'
+gem "omniauth"
+gem "sanitize"
+gem "fb_graph", :git => 'https://github.com/nov/fb_graph.git'
 
-gem 'sqlite3'
+# to install pg, set these env variables with the correct environment and path
+# export ARCHFLAGS='-arch x86_64'
+# export PATH=/opt/local/lib/postgresql83/bin/:${PATH}
+gem 'pg', '~>0.11.0'
+gem 'rmagick', :require => 'RMagick'
+gem 's3_swf_upload', :git => 'git://github.com/teamvisionvirtual/s3-swf-upload-plugin.git'
+gem 'will_paginate-rails3', '3.0.pre', :require => 'will_paginate'
+gem 'acts-as-taggable-on'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+group :development do
+  gem 'zencoder-fetcher'
+  gem 'awesome_print'
+  gem 'deadweight'
+  gem 'git'
+  gem 'git_remote_branch'
+  gem 'hpricot'
+  gem 'jasmine', '1.0.2.0'
+  gem 'juicer'
+  gem 'mongrel'
+  gem 'map_by_method'
+  gem 'pivotal_git_scripts'
+  gem 'rcov'
+  gem 'rspec-rails'
+  gem 'silent-postgres'
+  gem 'terminitor'
+  gem 'watchr'
+  gem 'wirble'
+  gem 'pry'
+end
 
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :test do
+  gem 'awesome_print'
+  gem 'fuubar'
+  gem 'jasmine', '1.0.2.0'
+  gem 'nokogiri'
+  gem 'rack-test'
+  gem 'rcov'
+  gem 'rspec-rails'
+  gem 'rr'
+  gem 'ruby-debug'
+  gem 'shoulda'
+  gem 'silent-postgres'
+  gem 'webrat'
+end
