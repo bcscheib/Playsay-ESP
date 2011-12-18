@@ -1,5 +1,5 @@
-You are user:  <%= @current_user.id.to_s %><br/>
-You're paired with user: <span id="pairedUser"></span>
+Welcome,  <%= @current_user.name %><br/>
+You're paired with: <span id="pairedUser"></span>
 <% form_for @current_user, :html => {'data-remote' => true} do |f| %>
   <%= f.hidden_field :force_unpair %>
 <% end %>

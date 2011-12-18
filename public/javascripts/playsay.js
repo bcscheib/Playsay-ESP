@@ -24,9 +24,9 @@ var Playsay = {
 //            FB.logout(function(response) {
 //              console.log('Logged out.');
 //            });
-          console.log(response);
           var facebookId = response.id;
-          Playsay.createUser(facebookId);
+          var name = response.name
+          Playsay.createUser(facebookId, name);
 //            console.log('user id: ', user_id);
 //            var query = FB.Data.query('select src from photo where uid={0}',
 //                user_id);
@@ -40,8 +40,9 @@ var Playsay = {
     }, {scope: 'email'});
   },
 
-  createUser: function(facebookId) {
+  createUser: function(facebookId, name) {
     $('#user_facebook_id').val(facebookId);
+    $('#user_facebook_id').val(name);
     $('#new_user').bind('ajax:success', function(event, response) {
       if (response && response.user && response.user.id)
         window.location = '/start';
@@ -88,7 +89,7 @@ var Playsay = {
       console.log(response);
       if (response && response.user.paired_user_id) // there is a paired user
       {
-        $('#pairedUser').html(response.user.id);
+        $('#pairedUser').html(response.user.name);
         $('#guessesContainer').show();
         if (response.user.guess_language == 'en') {
           $('#guess_body_label').html('You must guess in Spanish');

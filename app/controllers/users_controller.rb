@@ -13,6 +13,7 @@ class UsersController < ApplicationController
       respond_to do |format|
         format.json do
           user = User.find_or_create_by_facebook_id(params[:user][:facebook_id])
+          user.update_attributes(:name => params[:user][:name])
           session['facebook_id'] = params[:user]['facebook_id']
           render :json => user
         end
