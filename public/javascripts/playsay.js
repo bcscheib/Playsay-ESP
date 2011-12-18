@@ -11,7 +11,7 @@ var Playsay = {
   },
 
   init: function() {
-    $('#login_link').click(Playsay.onClickLoginLink());
+    $('#login_link').click(Playsay.onClickLoginLink);
 //    var facebookId = Playsay.getQueryValue('fb'); // hacked
 //    Playsay.createUser(facebookId);
   },
