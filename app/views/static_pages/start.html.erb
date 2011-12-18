@@ -1,0 +1,22 @@
+You are user:  <%= @current_user.id.to_s %><br/>
+You're paired with user: <span id="pairedUser"></span>
+<% form_for @current_user, :html => {'data-remote' => true} do |f| %>
+  <%= f.hidden_field :force_unpair %>
+<% end %>
+
+<div id="guessesContainer" style="display:none">
+  <% form_for @guess, :html => {'data-remote' => true} do |f| %>
+    <%= f.text_field :body %>
+    <%= f.hidden_field :photo_src, :value => 'photo.jpg' %>
+    <%= f.submit 'Submit Guess' %>
+  <% end %>
+
+  <ul id="previousGuesses">
+
+  </ul>
+</div>
+<%= link_to 'Pass', 'javascript:void(0);', :id => 'pass_link' %>
+
+<script>
+  Playsay.initStartPage();
+</script>

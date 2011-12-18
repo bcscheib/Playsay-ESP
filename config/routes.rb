@@ -1,5 +1,11 @@
 Playsay::Application.routes.draw do
-  root :to => 'static_pages#index'
+
+
+  match 'start' => 'static_pages#start'
+
+  resources :users
+  resources :guesses
+  root :to => 'users#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

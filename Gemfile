@@ -13,6 +13,7 @@ gem 'mail', '~>2.2.15'
 gem "omniauth"
 gem "sanitize"
 gem "fb_graph", :git => 'https://github.com/nov/fb_graph.git'
+gem 'jquery-rails', '>= 1.0.12'
 
 # to install pg, set these env variables with the correct environment and path
 # export ARCHFLAGS='-arch x86_64'
