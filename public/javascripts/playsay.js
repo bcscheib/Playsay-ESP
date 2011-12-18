@@ -42,7 +42,7 @@ var Playsay = {
 
   createUser: function(facebookId, name) {
     $('#user_facebook_id').val(facebookId);
-    $('#user_facebook_id').val(name);
+    $('#user_facebook_name').val(name);
     $('#new_user').bind('ajax:success', function(event, response) {
       if (response && response.user && response.user.id)
         window.location = '/start';
