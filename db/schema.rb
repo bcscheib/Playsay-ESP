@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111218120724) do
+ActiveRecord::Schema.define(:version => 20111218200407) do
 
   create_table "guesses", :force => true do |t|
     t.string   "photo_src"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20111218120724) do
     t.boolean  "logged_in",      :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "guess_language", :default => "en"
   end
 
 end

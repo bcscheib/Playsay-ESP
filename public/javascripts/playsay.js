@@ -17,15 +17,14 @@ var Playsay = {
   },
 
   onClickLoginLink: function() {
-    console.log("clicked");
     FB.login(function(response) {
       if (response.authResponse) {
         FB.api('/me', function(response) {
-          console.log("me");
 //            console.log('Good to see you, ' + response.name + '.');
 //            FB.logout(function(response) {
 //              console.log('Logged out.');
 //            });
+          console.log(response);
           var facebookId = response.id;
           Playsay.createUser(facebookId);
 //            console.log('user id: ', user_id);
@@ -58,10 +57,16 @@ var Playsay = {
   },
 
   initGuessBox: function() {
+    $('#guess_submit').click(function(event) {
+      event.preventDefault();
+      Playsay.translateGuess();
+      $('#previousGuesses').append('<li>' + $('#guess_body').val() + '</li>')
+      $('#guess_body').val('');
+    });
+
     $('#new_guess').bind('ajax:success', function(event, response) {
       if (response && response.guess) {
         if (response.guess.body) {
-          $('#previousGuesses').append('<li>' + response.guess.body + '</li>')
           if (response.guess.matched == true) {
             alert("You matched on " + response.guess.matched);
             window.location = "/start";
@@ -85,6 +90,14 @@ var Playsay = {
       {
         $('#pairedUser').html(response.user.id);
         $('#guessesContainer').show();
+        if (response.user.guess_language == 'en') {
+          $('#guess_body_label').html('You must guess in Spanish');
+          $('#guess_body').attr('data-lang', 'es');
+        }
+        else {
+          $('#guess_body_label').html('You must guess in English');
+          $('#guess_body').attr('data-lang', 'en');
+        }
       }
       else {
         $('#pairedUser').html("(not paired yet)");
@@ -93,15 +106,31 @@ var Playsay = {
         setTimeout(Playsay.pairUser, 500);
       }
     });
-    $('#pass_link').click(function() {
-      console.log("clicked");
-      $('#user_force_unpair').val('1');
-      Playsay.pairUser();
-    });
+    $('#pass_link').click(Playsay.onClickPassLink);
     Playsay.pairUser();
   },
 
   pairUser: function() {
     $(".edit_user").submit();
+  },
+
+  onClickPassLink: function() {
+    $('#user_force_unpair').val('1');
+    Playsay.pairUser();
+  },
+
+  translateGuess: function() {
+    var guess = $('#guess_body').val();
+    // make call to api here
+    var s = document.createElement("script");
+    s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=Playsay.guessTranslated&appId=" + appId +
+            "&from=es&to=en&text=" + guess;
+    document.getElementsByTagName("head")[0].appendChild(s);
+  },
+
+  guessTranslated: function(response){
+     $('#guess_body').val(response);
+     $('#new_guess').submit();
+     $('#guess_body').val('');
   }
 };
