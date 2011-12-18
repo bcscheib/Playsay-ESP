@@ -17,9 +17,11 @@ var Playsay = {
   },
 
   onClickLoginLink: function() {
+    console.log("clicked");
     FB.login(function(response) {
       if (response.authResponse) {
         FB.api('/me', function(response) {
+          console.log("me");
 //            console.log('Good to see you, ' + response.name + '.');
 //            FB.logout(function(response) {
 //              console.log('Logged out.');
