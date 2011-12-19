@@ -14,12 +14,25 @@ var Playsay = {
   },
 
   init: function() {
+    Playsay.checkLoggedIn();
     $('#login_link').click(Playsay.onClickLoginLink);
-//    var facebookId = Playsay.getQueryValue('fb'); // hacked
-//    var name = Playsay.getQueryValue('name'); // hacked
-//    Playsay.createUser(facebookId, name);
-    if(window.location.toString().indexOf('start')!=-1)
+    if (window.location.toString().indexOf('start') != -1)
       Playsay.initStartPage();
+  },
+
+  checkLoggedIn: function() {
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        console.log(response.authResponse);
+//        Playsay.createUser(response.authResponse.userID;
+        var accessToken = response.authResponse.accessToken;
+      } else if (response.status === 'not_authorized') {
+        // the user is logged in to Facebook,
+        //but not connected to the app
+      } else {
+        // the user isn't even logged in to Facebook.
+      }
+    });
   },
 
   onClickLoginLink: function() {
@@ -55,12 +68,12 @@ var Playsay = {
   },
 
   initStartPage: function() {
-      Playsay.initPairUser();
-      Playsay.Guess.init();
-      Playsay.getPhotos();
-      $(document).ready(function(){
-        $('#photoContainer img').width($('#photoContainer').outerWidth() * .9);
-      });
+    Playsay.initPairUser();
+    Playsay.Guess.init();
+    Playsay.getPhotos();
+    $(document).ready(function() {
+      $('#photoContainer img').width($('#photoContainer').outerWidth() * .9);
+    });
   },
 
   handleAlreadyGuessed: function() {
