@@ -14,9 +14,9 @@ var Playsay = {
   init: function() {
     console.log(FB.Data);
     $('#login_link').click(Playsay.onClickLoginLink);
-    var facebookId = Playsay.getQueryValue('fb'); // hacked
-    var name = Playsay.getQueryValue('name'); // hacked
-    Playsay.createUser(facebookId, name);
+//    var facebookId = Playsay.getQueryValue('fb'); // hacked
+//    var name = Playsay.getQueryValue('name'); // hacked
+//    Playsay.createUser(facebookId, name);
   },
 
   onClickLoginLink: function() {
@@ -29,13 +29,12 @@ var Playsay = {
 //            });
           var facebookId = response.id;
           var name = response.name
-          Playsay.createUser(facebookId, name);
+//          Playsay.createUser(facebookId, name);
 //            console.log('user id: ', user_id);
-//            var query = FB.Data.query('select src from photo where uid={0}',
-//                user_id);
-//            query.wait(function(rows) {
-//              console.log("results: ", rows);
-//            });
+            var query = FB.Data.query('select src from photo where uid={0}',facebookId);
+            query.wait(function(rows) {
+              console.log("results: ", rows);
+            });
         });
       } else {
 //          console.log('User cancelled login or did not fully authorize.');
