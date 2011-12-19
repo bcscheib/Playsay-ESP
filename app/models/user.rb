@@ -28,4 +28,9 @@ class User < ActiveRecord::Base
       u.update_attributes(:paired_user_id => nil, :queued => true)
     end
   end
+
+  def add_points
+    new_points = self.points + 100
+    self.update_attributes(:points => new_points)
+  end
 end

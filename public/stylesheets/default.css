@@ -1,0 +1,127 @@
+#container {
+  display: block;
+  width: 500px;
+  height: 490px;
+  background: silver;
+  -moz-border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  padding: 10px;
+  font-family: Arial;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+}
+
+#guessesContainer {
+  display: none;
+  margin-top: 15px;
+}
+
+#guessesContainer ul {
+  height: 180px;
+  background: white;
+  margin-top: 5px;
+  overflow: auto;
+  padding: 0px;
+}
+
+#guessesContainer ul li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+#guessesContainer h3 {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"] {
+  width: 180px !important;
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  border: 1px solid silver;
+  color: #65645A !important;
+  font-size: 13px !important;
+  font-weight: normal !important;
+  padding: 3px 0 3px 5px !important;
+  margin-bottom: 5px !important;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  background: none repeat scroll 0 0 #d7edef;
+}
+
+input[type="submit"], #pass_link {
+  -moz-box-shadow: inset 0px 1px 0px 0px white;
+  -webkit-box-shadow: inset 0px 1px 0px 0px white;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f37c20), color-stop(1, #d8600a));
+  background: -moz-linear-gradient(center top, #f37c20 5%, #d8600a 100%);
+  background-color: #ededed;
+  border: 1px solid white;
+  display: inline-block;
+  color: white !important;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px !important;
+  text-decoration: none;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+#photoContainer {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  background: white;
+  padding: 5px 5px 15px 5px;
+  width: 270px;
+  height: 200px;
+}
+
+#leftCol {
+  float: left;
+  width: 300px;
+}
+
+#rightCol {
+  float: right;
+  width: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+#guessMessage {
+  font-size: 14px;
+  display: block;
+  padding: 5px;
+  border: 1px solid black;
+  height: 20px;
+  display: none;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  clear: right;
+  margin-top: 10px;
+  background:  white;
+}

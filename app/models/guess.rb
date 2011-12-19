@@ -10,6 +10,8 @@ class Guess < ActiveRecord::Base
       paired_user_guesses = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
       unless paired_user_guesses.empty?
         self.matched = true
+        user.add_points
+        user.paired_user.add_points
       end
     else
       self.body = nil #paired user passed

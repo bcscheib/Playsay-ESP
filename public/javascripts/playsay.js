@@ -1,4 +1,5 @@
 var Playsay = {
+  guesses: [],
   getQueryValue: function(name) {
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
     var regexS = "[\\?&]" + name + "=([^&#]*)";
@@ -12,8 +13,9 @@ var Playsay = {
 
   init: function() {
     $('#login_link').click(Playsay.onClickLoginLink);
-//    var facebookId = Playsay.getQueryValue('fb'); // hacked
-//    Playsay.createUser(facebookId);
+    var facebookId = Playsay.getQueryValue('fb'); // hacked
+    var name = Playsay.getQueryValue('name'); // hacked
+    Playsay.createUser(facebookId, name);
   },
 
   onClickLoginLink: function() {
@@ -53,35 +55,34 @@ var Playsay = {
   initStartPage: function() {
     $(document).ready(function() {
       Playsay.initPairUser();
-      Playsay.initGuessBox();
+      Playsay.Guess.init();
     });
   },
 
-  initGuessBox: function() {
-    $('#guess_submit').click(function(event) {
-      event.preventDefault();
-      Playsay.translateGuess();
-      $('#previousGuesses').append('<li>' + $('#guess_body').val() + '</li>')
-      $('#guess_body').val('');
-    });
+  handleAlreadyGuessed: function() {
+    $('#guessMessage').fadeIn();
+    $('#guessMessage').html('You already guessed that.');
+    $('#guessMessage').fadeOut(3000);
+    $('#guess_body').val('');
+  },
 
-    $('#new_guess').bind('ajax:success', function(event, response) {
-      if (response && response.guess) {
-        if (response.guess.body) {
-          if (response.guess.matched == true) {
-            alert("You matched on " + response.guess.matched);
-            window.location = "/start";
-          }
-        }
-        else {
-          alert("Your pair passed on this photo");
-          window.location = "/start";
-        }
-      }
-      else {
-        // some kind of error
-      }
-    });
+  handleMatched: function(guess) {
+    $('#guessMessage').fadeIn();
+    $('#guessMessage').html('You matched on ' + guess + '.');
+    $('#guess_body').val('');
+    setTimeout(Playsay.refresh, 2000);
+  },
+
+  handleNotSpanish: function(guess) {
+    $('#guessMessage').fadeIn();
+    $('#guessMessage').html('You have to guess in spanish! English is not accepted.');
+    $('#guess_body').val('');
+  },
+
+  handleNotEnglish: function(guess) {
+    $('#guessMessage').fadeIn();
+    $('#guessMessage').html('You have to guess in English! No other language is accepted.');
+    $('#guess_body').val('');
   },
 
   initPairUser: function() {
@@ -120,18 +121,7 @@ var Playsay = {
     Playsay.pairUser();
   },
 
-  translateGuess: function() {
-    var guess = $('#guess_body').val();
-    // make call to api here
-    var s = document.createElement("script");
-    s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=Playsay.guessTranslated&appId=" + appId +
-            "&from=es&to=en&text=" + guess;
-    document.getElementsByTagName("head")[0].appendChild(s);
-  },
-
-  guessTranslated: function(response){
-     $('#guess_body').val(response);
-     $('#new_guess').submit();
-     $('#guess_body').val('');
+  refresh: function() {
+    window.location = "/start";
   }
 };
