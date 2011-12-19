@@ -14,25 +14,9 @@ var Playsay = {
   },
 
   init: function() {
-    Playsay.checkLoggedIn();
     $('#login_link').click(Playsay.onClickLoginLink);
     if (window.location.toString().indexOf('start') != -1)
       Playsay.initStartPage();
-  },
-
-  checkLoggedIn: function() {
-    FB.getLoginStatus(function(response) {
-      if (response.status === 'connected') {
-        console.log(response.authResponse);
-//        Playsay.createUser(response.authResponse.userID;
-        var accessToken = response.authResponse.accessToken;
-      } else if (response.status === 'not_authorized') {
-        // the user is logged in to Facebook,
-        //but not connected to the app
-      } else {
-        // the user isn't even logged in to Facebook.
-      }
-    });
   },
 
   onClickLoginLink: function() {
