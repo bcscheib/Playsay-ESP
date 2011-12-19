@@ -10,8 +10,8 @@ class Guess < ActiveRecord::Base
       paired_user_guesses = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
       unless paired_user_guesses.empty?
         self.matched = true
-        pair_matched_guess = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
-        pair_matched_guess.update_attributes(:matched => true)
+        #pair_matched_guess = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
+        #pair_matched_guess.update_attributes(:matched => true)
         user.add_points
         user.paired_user.add_points
       end
