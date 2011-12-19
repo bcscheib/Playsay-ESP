@@ -41,8 +41,8 @@ var Playsay = {
   },
 
   getPhotos: function() {
-    console.log(Playsay.facebookId);
     var query = FB.Data.query('select src from photo where uid={0}', Playsay.facebookId);
+    console.log(query);
     query.wait(function(rows) {
       console.log("results: ", rows);
     });
