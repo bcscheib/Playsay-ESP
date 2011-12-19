@@ -13,7 +13,7 @@
   <%= @current_user.name %>, 
   you're paired with <span id="pairedUser"></span>
   <br/><br/>
-  Points: <%= @current_user.points %>
+  Points: <%= @current_user.points.to_i %>
 </div>
 <div id="rightCol">
   <div id="guessesContainer">
