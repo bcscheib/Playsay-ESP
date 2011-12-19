@@ -26,10 +26,6 @@ var Playsay = {
     FB.login(function(response) {
       if (response.authResponse) {
         FB.api('/me', function(response) {
-//            console.log('Good to see you, ' + response.name + '.');
-//            FB.logout(function(response) {
-//              console.log('Logged out.');
-//            });
           Playsay.facebookId = response.id;
           Playsay.name = response.name;
           Playsay.createUser(Playsay.facebookId, Playsay.name);
@@ -41,11 +37,11 @@ var Playsay = {
   },
 
   getPhotos: function() {
-    var query = FB.Data.query('select src from photo where uid={0}', Playsay.facebookId);
-    console.log(query);
-    query.wait(function(rows) {
-      console.log("results: ", rows);
-    });
+//    var query = FB.Data.query('select src from photo where uid={0}', Playsay.facebookId);
+//    console.log(query);
+//    query.wait(function(rows) {
+//      console.log("results: ", rows);
+//    });
   },
 
   createUser: function(facebookId, name) {
