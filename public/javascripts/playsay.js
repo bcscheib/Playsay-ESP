@@ -31,9 +31,7 @@ var Playsay = {
 //            });
           Playsay.facebookId = response.id;
           Playsay.name = response.name;
-//          Playsay.createUser(facebookId, name, );
-//            console.log('user id: ', user_id);
-
+          Playsay.createUser(Playsay.facebookId, Playsay.name);
         });
       } else {
 //          console.log('User cancelled login or did not fully authorize.');
