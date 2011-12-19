@@ -1,5 +1,5 @@
 Playsay::Application.routes.draw do
-  match 'start' => 'plays#start'
+  match 'start' => 'plays#index'
 
   resources :users
   resources :guesses
