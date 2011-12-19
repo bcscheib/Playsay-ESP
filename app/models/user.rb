@@ -26,7 +26,6 @@ class User < ActiveRecord::Base
     if u = paired_user
       self.update_attributes(:paired_user_id => nil, :queued => true)
       u.update_attributes(:paired_user_id => nil, :queued => true)
-      u.guesses.destroy_all
     end
   end
 
