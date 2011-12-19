@@ -33,15 +33,19 @@ var Playsay = {
           Playsay.name = response.name;
 //          Playsay.createUser(facebookId, name, );
 //            console.log('user id: ', user_id);
-            var query = FB.Data.query('select src from photo where uid={0}',Playsay.facebookId);
-            query.wait(function(rows) {
-              alert("results: ", rows);
-            });
+
         });
       } else {
 //          console.log('User cancelled login or did not fully authorize.');
       }
     }, {scope: 'email, user_photos'});
+  },
+
+  getPhotos: function() {
+    var query = FB.Data.query('select src from photo where uid={0}', Playsay.facebookId);
+    query.wait(function(rows) {
+      console.log("results: ", rows);
+    });
   },
 
   createUser: function(facebookId, name) {
