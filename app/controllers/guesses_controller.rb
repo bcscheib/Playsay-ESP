@@ -6,7 +6,7 @@ class GuessesController < ApplicationController
     respond_to do |format|
       format.json do
          guess_to_return = @current_user.guesses.create(params[:guess])
-         matched_guesses = @current_user.guesses.where(:matched => true, :photo_src => guess.photo_src)
+         matched_guesses = @current_user.guesses.where(:matched => true, :photo_src => guess_to_return.photo_src)
          guess_to_return = matched_guesses.first unless matched_guesses.empty?
          render :json => guess_to_return
       end
