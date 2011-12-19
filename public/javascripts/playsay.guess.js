@@ -6,6 +6,7 @@ Playsay.Guess = {
 
   guessSubmitted: function(event, response){
     if (response && response.guess) {
+        console.log(response.guess);
         if (response.guess.body) {
           if (response.guess.matched == true) {
             Playsay.handleMatched(response.guess.body);
