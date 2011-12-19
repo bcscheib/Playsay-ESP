@@ -1,7 +1,7 @@
 Playsay::Application.routes.draw do
 
 
-  match 'start' => 'static_pages#start'
+  match 'start' => 'plays#start'
 
   resources :users
   resources :guesses
