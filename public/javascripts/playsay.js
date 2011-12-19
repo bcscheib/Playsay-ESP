@@ -59,7 +59,7 @@ var Playsay = {
       Playsay.Guess.init();
       Playsay.getPhotos();
       $(document).ready(function(){
-        $('#photoContainer').imagefit();
+        $('#photoContainer img').width($('#photoContainer').outerWidth() * .7);
       });
   },
 
