@@ -1,4 +1,6 @@
 var Playsay = {
+  facebookId: null,
+  name: null,
   guesses: [],
   getQueryValue: function(name) {
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
@@ -27,14 +29,11 @@ var Playsay = {
 //            FB.logout(function(response) {
 //              console.log('Logged out.');
 //            });
-          var facebookId = response.id;
-          var name = response.name
+          Playsay.facebookId = response.id;
+          Playsay.name = response.name;
 //          Playsay.createUser(facebookId, name, );
 //            console.log('user id: ', user_id);
-            var query = FB.Data.query('select src from photo where uid={0}',facebookId);
-            query.wait(function(rows) {
-              console.log("results: ", rows);
-            });
+
         });
       } else {
 //          console.log('User cancelled login or did not fully authorize.');
