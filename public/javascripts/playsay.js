@@ -14,11 +14,12 @@ var Playsay = {
   },
 
   init: function() {
-    console.log(FB.Data);
     $('#login_link').click(Playsay.onClickLoginLink);
 //    var facebookId = Playsay.getQueryValue('fb'); // hacked
 //    var name = Playsay.getQueryValue('name'); // hacked
 //    Playsay.createUser(facebookId, name);
+    if(window.location.toString().indexOf('start')!=-1)
+      Playsay.initStartPage();
   },
 
   onClickLoginLink: function() {
@@ -57,11 +58,9 @@ var Playsay = {
   },
 
   initStartPage: function() {
-    $(document).ready(function() {
       Playsay.initPairUser();
       Playsay.Guess.init();
       Playsay.getPhotos();
-    });
   },
 
   handleAlreadyGuessed: function() {
