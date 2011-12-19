@@ -23,7 +23,7 @@ class Guess < ActiveRecord::Base
   def set_paired_user_guess_matched
     if user.paired_user #paired user might have passed already
       paired_user_guesses = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
-      paired_user_guesses.first.update_attributes(:matched => true)
+      paired_user_guesses.first.update_attributes(:matched => true) unless paired_user_guesses.empty?
     end
   end
 end
