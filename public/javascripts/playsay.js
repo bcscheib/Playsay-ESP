@@ -62,6 +62,7 @@ var Playsay = {
     $(document).ready(function() {
       Playsay.initPairUser();
       Playsay.Guess.init();
+      Playsay.getPhotos();
     });
   },
 
