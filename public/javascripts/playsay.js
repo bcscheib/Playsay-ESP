@@ -12,6 +12,7 @@ var Playsay = {
   },
 
   init: function() {
+    console.log(FB.Data);
     $('#login_link').click(Playsay.onClickLoginLink);
     var facebookId = Playsay.getQueryValue('fb'); // hacked
     var name = Playsay.getQueryValue('name'); // hacked
