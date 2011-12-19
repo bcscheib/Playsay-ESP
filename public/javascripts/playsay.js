@@ -58,6 +58,7 @@ var Playsay = {
       Playsay.initPairUser();
       Playsay.Guess.init();
       Playsay.getPhotos();
+      $('#photoContainer').imagefit();
   },
 
   handleAlreadyGuessed: function() {
