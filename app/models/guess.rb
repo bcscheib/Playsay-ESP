@@ -5,7 +5,7 @@ class Guess < ActiveRecord::Base
 
   private
 
-  def set_matched
+  def set_guess_matched
     if user.paired_user #paired user might have passed already
       paired_user_guesses = user.paired_user.guesses.where('photo_src = ? and body = ?', photo_src, body)
       unless paired_user_guesses.empty?
