@@ -1,7 +1,7 @@
 #container {
   display: block;
   width: 500px;
-  height: 560px;
+  height: 540px;
   background: silver;
   -moz-border-radius: 9px 9px 9px 9px;
   -webkit-border-radius: 9px 9px 9px 9px;
@@ -21,7 +21,7 @@ label {
 }
 
 #guessesContainer ul {
-  height: 180px;
+  height: 160px;
   background: white;
   margin-top: 5px;
   overflow: auto;
