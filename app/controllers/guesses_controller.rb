@@ -5,10 +5,12 @@ class GuessesController < ApplicationController
     render :json => {} if params[:guess][:body].blank?
     respond_to do |format|
       format.json do
-         guess_to_return = @current_user.guesses.create(params[:guess])
-         matched_guesses = @current_user.guesses.where(:matched => true, :photo_src => guess_to_return.photo_src)
-         guess_to_return = matched_guesses.first unless matched_guesses.empty?
-         render :json => guess_to_return
+         last_guess_for_photo = @current_user.guesses.where(:matched => true, :photo_src => params[:guess][:photo_src]).last
+         last_guess_for_photo_json = {}
+         last_guess_for_photo_json = {:body => last_guess_for_photo.body, :matched => last_guess_for_photo.matched} if last_guess_for_photo
+
+         new_guess = @current_user.guesses.create(params[:guess])
+         render :json => {:guess => {:body => new_guess.body, :matched => new_guess.matched}, :last_guess => last_guess_for_photo_json}
       end
     end
   end

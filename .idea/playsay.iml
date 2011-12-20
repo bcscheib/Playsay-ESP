@@ -16,75 +16,115 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="abstract (v1.0.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rr (v1.0.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.0.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v1.1.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.5.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.0.21, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.0.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.10, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ruby-debug (v0.10.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="awesome_print (v1.0.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.1.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rb-appscript (v0.6.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v0.9.2.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fastthread (v1.0.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.0.21, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="silent-postgres (v0.1.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.15.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.31, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="highline (v1.5.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="map_by_method (v0.8.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="linecache (v0.46, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="map_by_method (v0.8.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pivotal_git_scripts (v1.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.0.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fuubar (v0.0.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coderay (v0.9.8, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass (v3.1.12, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v1.0.19, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.17.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="heroku (v1.17.17, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec (v2.7.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-debug-base (v0.10.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mail (v2.2.19, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="exceptional (v2.0.32, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="text-format (v1.0.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail (v2.2.19, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby_parser (v2.3.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hpricot (v0.8.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zencoder-fetcher (v0.2.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jasmine (v1.0.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="warden (v1.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="text-format (v1.0.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate-rails3 (v3.0.pre, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.7.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hashie (v1.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.6.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rbx-require-relative (v0.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v3.0.9, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cgi_multipart_eof_fix (v2.5.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="launchy (v0.3.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.7.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shoulda (v2.11.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="wirble (v0.1.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="custom_error_message (v1.1.0.pre, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="builder (v2.1.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.1.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mongrel (v1.1.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="webrat (v0.7.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sanitize (v2.0.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="deadweight (v0.2.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="git (v1.2.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="terminitor (v0.4.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="github (v0.6.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml (v3.1.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="configuration (v1.3.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v0.6.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-mount (v0.6.14, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="pg (v0.11.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="text-hyphen (v1.0.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fssm (v0.2.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="json (v1.4.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gem_plugin (v0.2.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.8.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="attr_required (v0.0.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.7.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cmdparse (v2.0.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.2.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slop (v2.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="trollop (v1.16.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="watchr (v0.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="abstract (v1.0.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v1.5.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-debug (v0.10.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-appscript (v0.6.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v0.9.2.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="fastthread (v1.0.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="declarative_authorization (v0.5.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-instafail (v0.1.9, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.2.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.0.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v0.9.8, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v2.7.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jasmine (v1.0.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v0.9.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hashie (v1.2.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.6.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v0.0.10, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v2.1.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json_pure (v1.6.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webrat (v0.7.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="git (v1.2.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.0.11, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.7.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="columnize (v0.3.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-mount (v0.6.14, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.11.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rest-client (v1.6.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.4.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.8.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rcov (v0.9.11, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="attr_required (v0.0.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="juicer (v1.0.13, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.7.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-oauth2 (v0.11.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httpclient (v2.2.4, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v3.0.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="slop (v2.1.0, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="trollop (v1.16.2, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chunky_png (v1.2.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="watchr (v0.7, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.4.1, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="git_remote_branch (v0.3.3, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="compass (v0.11.5, Ruby SDK 1.8.7-p334 [rails3]) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

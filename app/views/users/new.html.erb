@@ -4,3 +4,8 @@ Get started with Playsay's photo tagging game
   <%= f.hidden_field :facebook_id %>
   <%= f.hidden_field :name %>
 <% end %>
+
+<script>
+  if (window.location.toString().indexOf('local') != -1)
+    Playsay.init();
+</script>

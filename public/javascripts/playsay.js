@@ -1,4 +1,5 @@
 var Playsay = {
+  debug: 0,
   facebookId: null,
   name: null,
   guesses: [],
@@ -14,9 +15,22 @@ var Playsay = {
   },
 
   init: function() {
+    Playsay.setDebug();
     $('#login_link').click(Playsay.onClickLoginLink);
     if (window.location.toString().indexOf('start') != -1)
       Playsay.initStartPage();
+    if(Playsay.debug == 1){
+      Playsay.fakeUser();
+    }
+  },
+
+  setDebug: function(){
+    if (window.location.toString().indexOf('local') != -1)
+      Playsay.debug = 1;
+  },
+
+  fakeUser: function(){
+    Playsay.createUser(Playsay.getQueryValue('fb'), Playsay.getQueryValue('name'));
   },
 
   onClickLoginLink: function() {
@@ -34,11 +48,6 @@ var Playsay = {
   },
 
   getPhotos: function() {
-//    var query = FB.Data.query('select src from photo where uid={0}', Playsay.facebookId);
-//    console.log(query);
-//    query.wait(function(rows) {
-//      console.log("results: ", rows);
-//    });
   },
 
   createUser: function(facebookId, name) {
@@ -46,7 +55,7 @@ var Playsay = {
     $('#user_name').val(name);
     $('#new_user').bind('ajax:success', function(event, response) {
       if (response && response.user && response.user.id)
-        window.location = '/start';
+        Playsay.refresh();
     });
     $('form#new_user').submit();
   },
@@ -78,21 +87,30 @@ var Playsay = {
     $('#guessMessage').fadeIn();
     $('#guessMessage').html('You have to guess in spanish! English is not accepted.');
     $('#guess_body').val('');
+    $('#guessMessage').fadeOut(3000);
   },
 
   handleNotEnglish: function(guess) {
     $('#guessMessage').fadeIn();
     $('#guessMessage').html('You have to guess in English! No other language is accepted.');
     $('#guess_body').val('');
+    $('#guessMessage').fadeOut(3000);
+  },
+
+  handleTabooWord: function(guess) {
+    $('#guessMessage').fadeIn();
+    $('#guessMessage').html('That guess is taboo!');
+    $('#guess_body').val('');
+    $('#guessMessage').fadeOut(3000);
   },
 
   initPairUser: function() {
     $('.edit_user').bind('ajax:success', function(event, response) {
-      console.log(response);
       if (response && response.user.paired_user_id) // there is a paired user
       {
         $('#pairedUser').html(response.user.name);
         $('#guessesContainer').show();
+        $('#taboos').show();
         if (response.user.guess_language == 'en') {
           $('#guess_body_label').html('You must guess in Spanish');
           $('#guess_body').attr('data-lang', 'es');
@@ -109,7 +127,7 @@ var Playsay = {
         setTimeout(Playsay.pairUser, 500);
       }
     });
-    $('#pass_link').click(Playsay.onClickPassLink);
+//    $('#pass_link').click(Playsay.onClickPassLink);
     Playsay.pairUser();
   },
 
@@ -117,10 +135,10 @@ var Playsay = {
     $(".edit_user").submit();
   },
 
-  onClickPassLink: function() {
-    $('#user_force_unpair').val('1');
-    Playsay.pairUser();
-  },
+//  onClickPassLink: function() {
+//    $('#user_force_unpair').val('1');
+//    Playsay.pairUser();
+//  },
 
   refresh: function() {
     window.location = "/start";
